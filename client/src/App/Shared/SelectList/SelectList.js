@@ -1,0 +1,23 @@
+import React from 'react';
+import classNames from 'classnames';
+import './style.css';
+
+const SelectList = (props) => {
+  let {value, options, onChange, id, selectClassName } = props;
+  let selectClass;
+
+  if (selectClassName) {
+    selectClass = `formGroup ${selectClassName}`
+  }
+
+  return (
+    <select  id={id} value={value} onChange={(ev) => onChange(ev)} className={selectClass}>
+      {options.map((option, idx) => {
+        let key = `${option['value']}${idx.toString()}`
+        return (<option key={key} value={option['value']} >{option['label']}</option>)
+      })}
+    </select>
+  )
+}
+
+export default SelectList;
