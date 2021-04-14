@@ -1,0 +1,20 @@
+input {
+  /* min-width: 100%; */
+  min-width: calc(100% - 35px);
+  height: 38px;
+  padding-left: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+input[readonly] {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 768px) {
+
+  /* input {
+    width: 50%;
+  } */
+}
