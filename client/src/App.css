@@ -1,0 +1,97 @@
+.App {
+  /* text-align: center; */
+}
+
+.main {
+  clear: both;
+  text-align: left;
+  margin: 15px 15px;
+}
+
+.list-no-style {
+  list-style: none;
+  /*padding-left: 8px;*/
+}
+
+/* list items */
+.list-item-icon:nth-of-type(2n + 1) {
+  margin: 0 6px;
+}
+
+.list-item-icon-lg {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.row,
+.form-row-inline {
+  display: flex;
+  flex-flow: row no-wrap;
+}
+
+h1 {
+  margin-left: 5%;
+}
+
+/* form */
+
+.formGroup {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 90%;
+  margin: 8px auto;
+}
+
+.div-control {
+  margin-bottom: 16px;
+}
+
+/* global grid */
+
+.row {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.oneCol, 
+.twoCol,
+.threeCol,
+.sixCol {
+  width: 90%;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 15px 35px;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: flex-start; */
+  }
+
+  .twoCol {
+    width: 45%;
+  }
+
+  .threeCol {
+    width: 30%;
+  }
+
+  .sixCol {
+    width: 15%;
+  }
+
+  .formGroup {
+    width: 60%;
+  }
+
+  h1 {
+    margin-left: 20%;
+  }
+
+}
