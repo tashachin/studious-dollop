@@ -1,0 +1,16 @@
+select,
+option {
+  height: 38px;
+  padding-left: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  width: 50%;
+}
+
+select:focus,
+option:focus {
+  outline: none !important;
+  border:1px solid #6e614f; 
+  box-shadow: 0 0 10px #c0e585;
+}
